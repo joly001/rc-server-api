@@ -9,7 +9,7 @@ public class UserOrganizationRsp {
      */
     private String id;
     /**
-     * 昵称
+     * 姓名
      */
     private String nick;
     /**
@@ -17,7 +17,7 @@ public class UserOrganizationRsp {
      */
     private String mobile;
     /**
-     * 施工人员状态(00:入场、01:出厂)
+     * 施工人员状态(00:入场、01:出场)
      */
     private String builderStatus;
     /**
