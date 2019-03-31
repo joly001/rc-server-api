@@ -4,20 +4,20 @@ import java.util.List;
 
 public class MachineryListRsp {
 
-    private List<MachineryRsp> machineryRspList;
+    private List<MachineryRsp> list;
 
-    public List<MachineryRsp> getMachineryRspList() {
-        return machineryRspList;
+    public List<MachineryRsp> getList() {
+        return list;
     }
 
-    public void setMachineryRspList(List<MachineryRsp> machineryRspList) {
-        this.machineryRspList = machineryRspList;
+    public void setList(List<MachineryRsp> list) {
+        this.list = list;
     }
 
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder("MachineryListRsp{");
-        sb.append("machineryRspList=").append(machineryRspList);
+        sb.append("list=").append(list);
         sb.append('}');
         return sb.toString();
     }
