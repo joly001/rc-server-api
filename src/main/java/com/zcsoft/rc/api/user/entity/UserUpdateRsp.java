@@ -1,6 +1,6 @@
 package com.zcsoft.rc.api.user.entity;
 
-public class UserLoginRsp {
+public class UserUpdateRsp {
 
     /**
      * id
@@ -14,10 +14,6 @@ public class UserLoginRsp {
      * 手环编码
      */
     private String wristStrapCode;
-    /**
-     * 登录TOKEN
-     */
-    private String loginToken;
     /**
      * 手机
      */
@@ -59,14 +55,6 @@ public class UserLoginRsp {
         this.wristStrapCode = wristStrapCode;
     }
 
-    public String getLoginToken() {
-        return loginToken;
-    }
-
-    public void setLoginToken(String loginToken) {
-        this.loginToken = loginToken;
-    }
-
     public String getMobile() {
         return mobile;
     }
@@ -101,11 +89,10 @@ public class UserLoginRsp {
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("UserLoginRsp{");
+        final StringBuilder sb = new StringBuilder("UserUpdateRsp{");
         sb.append("id='").append(id).append('\'');
         sb.append(", nick='").append(nick).append('\'');
         sb.append(", wristStrapCode='").append(wristStrapCode).append('\'');
-        sb.append(", loginToken='").append(loginToken).append('\'');
         sb.append(", mobile='").append(mobile).append('\'');
         sb.append(", userPicture='").append(userPicture).append('\'');
         sb.append(", orgName='").append(orgName).append('\'');
