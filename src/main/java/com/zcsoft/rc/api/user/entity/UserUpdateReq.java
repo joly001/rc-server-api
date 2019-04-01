@@ -1,10 +1,13 @@
 package com.zcsoft.rc.api.user.entity;
 
+import org.hibernate.validator.constraints.NotEmpty;
+
 public class UserUpdateReq {
 
     /**
      * id
      */
+    @NotEmpty
     private String id;
     /**
      * 姓名
