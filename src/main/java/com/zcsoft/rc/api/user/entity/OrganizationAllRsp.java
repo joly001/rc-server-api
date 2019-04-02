@@ -18,6 +18,10 @@ public class OrganizationAllRsp {
      */
     private Integer sequenceNumber;
     /**
+     * 是否关注
+     */
+    private Boolean isFollow;
+    /**
      * 子组织列表
      */
     private List<OrganizationAllRsp> childOrgList;
@@ -37,12 +41,21 @@ public class OrganizationAllRsp {
     public void setOrgName(String orgName) {
         this.orgName = orgName;
     }
+
     public Integer getSequenceNumber() {
         return sequenceNumber;
     }
 
     public void setSequenceNumber(Integer sequenceNumber) {
         this.sequenceNumber = sequenceNumber;
+    }
+
+    public Boolean getFollow() {
+        return isFollow;
+    }
+
+    public void setFollow(Boolean follow) {
+        isFollow = follow;
     }
 
     public List<OrganizationAllRsp> getChildOrgList() {
@@ -72,6 +85,7 @@ public class OrganizationAllRsp {
         sb.append("id='").append(id).append('\'');
         sb.append(", orgName='").append(orgName).append('\'');
         sb.append(", sequenceNumber=").append(sequenceNumber);
+        sb.append(", isFollow=").append(isFollow);
         sb.append(", childOrgList=").append(childOrgList);
         sb.append('}');
         return sb.toString();
