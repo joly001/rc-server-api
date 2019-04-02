@@ -2,7 +2,7 @@ package com.zcsoft.rc.api.machinery.entity;
 
 import java.util.Date;
 
-public class MachineryRsp {
+public class MachineryUserFollowRsp {
 
     /**
      * id
@@ -40,10 +40,6 @@ public class MachineryRsp {
      * 手环编码
      */
     private String wristStrapCode;
-    /**
-     * 是否关注
-     */
-    private Boolean isFollow;
     /**
      * 创建时间
      */
@@ -121,14 +117,6 @@ public class MachineryRsp {
         this.wristStrapCode = wristStrapCode;
     }
 
-    public Boolean getFollow() {
-        return isFollow;
-    }
-
-    public void setFollow(Boolean follow) {
-        isFollow = follow;
-    }
-
     public Date getCreateTime() {
         return createTime;
     }
@@ -139,7 +127,7 @@ public class MachineryRsp {
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("MachineryRsp{");
+        final StringBuilder sb = new StringBuilder("OrganizationUserFollowRsp{");
         sb.append("id='").append(id).append('\'');
         sb.append(", plateNumber='").append(plateNumber).append('\'');
         sb.append(", machineryName='").append(machineryName).append('\'');
@@ -149,7 +137,6 @@ public class MachineryRsp {
         sb.append(", mobile='").append(mobile).append('\'');
         sb.append(", workRadius=").append(workRadius);
         sb.append(", wristStrapCode='").append(wristStrapCode).append('\'');
-        sb.append(", isFollow=").append(isFollow);
         sb.append(", createTime=").append(createTime);
         sb.append('}');
         return sb.toString();

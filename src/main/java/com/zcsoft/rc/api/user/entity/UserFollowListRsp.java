@@ -28,54 +28,10 @@ public class UserFollowListRsp {
      * 离场时间
      */
     private Date leaveDate;
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public String getNick() {
-        return nick;
-    }
-
-    public void setNick(String nick) {
-        this.nick = nick;
-    }
-
-    public String getMobile() {
-        return mobile;
-    }
-
-    public void setMobile(String mobile) {
-        this.mobile = mobile;
-    }
-
-    public String getBuilderStatus() {
-        return builderStatus;
-    }
-
-    public void setBuilderStatus(String builderStatus) {
-        this.builderStatus = builderStatus;
-    }
-
-    public Date getAdmissionDate() {
-        return admissionDate;
-    }
-
-    public void setAdmissionDate(Date admissionDate) {
-        this.admissionDate = admissionDate;
-    }
-
-    public Date getLeaveDate() {
-        return leaveDate;
-    }
-
-    public void setLeaveDate(Date leaveDate) {
-        this.leaveDate = leaveDate;
-    }
+    /**
+     * 创建时间
+     */
+    private Date createTime;
 
     @Override
     public String toString() {
@@ -86,6 +42,7 @@ public class UserFollowListRsp {
         sb.append(", builderStatus='").append(builderStatus).append('\'');
         sb.append(", admissionDate=").append(admissionDate);
         sb.append(", leaveDate=").append(leaveDate);
+        sb.append(", createTime=").append(createTime);
         sb.append('}');
         return sb.toString();
     }
