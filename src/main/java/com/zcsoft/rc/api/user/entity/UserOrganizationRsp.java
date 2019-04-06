@@ -29,6 +29,14 @@ public class UserOrganizationRsp {
      */
     private Date leaveDate;
     /**
+     * 用户图片
+     */
+    private String userPicture;
+    /**
+     * 职位
+     */
+    private String builderUserType;
+    /**
      * 是否关注
      */
     private Boolean isFollow;
@@ -81,6 +89,22 @@ public class UserOrganizationRsp {
         this.leaveDate = leaveDate;
     }
 
+    public String getUserPicture() {
+        return userPicture;
+    }
+
+    public void setUserPicture(String userPicture) {
+        this.userPicture = userPicture;
+    }
+
+    public String getBuilderUserType() {
+        return builderUserType;
+    }
+
+    public void setBuilderUserType(String builderUserType) {
+        this.builderUserType = builderUserType;
+    }
+
     public Boolean getFollow() {
         return isFollow;
     }
@@ -98,6 +122,8 @@ public class UserOrganizationRsp {
         sb.append(", builderStatus='").append(builderStatus).append('\'');
         sb.append(", admissionDate=").append(admissionDate);
         sb.append(", leaveDate=").append(leaveDate);
+        sb.append(", userPicture='").append(userPicture).append('\'');
+        sb.append(", builderUserType='").append(builderUserType).append('\'');
         sb.append(", isFollow=").append(isFollow);
         sb.append('}');
         return sb.toString();

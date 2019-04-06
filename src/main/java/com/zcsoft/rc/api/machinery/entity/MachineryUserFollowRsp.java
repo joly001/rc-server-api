@@ -29,6 +29,10 @@ public class MachineryUserFollowRsp {
      */
     private String nick;
     /**
+     * 用户图片
+     */
+    private String userPicture;
+    /**
      * 手机
      */
     private String mobile;
@@ -93,6 +97,14 @@ public class MachineryUserFollowRsp {
         this.nick = nick;
     }
 
+    public String getUserPicture() {
+        return userPicture;
+    }
+
+    public void setUserPicture(String userPicture) {
+        this.userPicture = userPicture;
+    }
+
     public String getMobile() {
         return mobile;
     }
@@ -127,13 +139,14 @@ public class MachineryUserFollowRsp {
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("OrganizationUserFollowRsp{");
+        final StringBuilder sb = new StringBuilder("MachineryUserFollowRsp{");
         sb.append("id='").append(id).append('\'');
         sb.append(", plateNumber='").append(plateNumber).append('\'');
         sb.append(", machineryName='").append(machineryName).append('\'');
         sb.append(", machineryType='").append(machineryType).append('\'');
         sb.append(", userId='").append(userId).append('\'');
         sb.append(", nick='").append(nick).append('\'');
+        sb.append(", userPicture='").append(userPicture).append('\'');
         sb.append(", mobile='").append(mobile).append('\'');
         sb.append(", workRadius=").append(workRadius);
         sb.append(", wristStrapCode='").append(wristStrapCode).append('\'');

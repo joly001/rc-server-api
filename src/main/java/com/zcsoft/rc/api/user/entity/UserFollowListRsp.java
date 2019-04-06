@@ -29,6 +29,14 @@ public class UserFollowListRsp {
      */
     private Date leaveDate;
     /**
+     * 用户图片
+     */
+    private String userPicture;
+    /**
+     * 职位
+     */
+    private String builderUserType;
+    /**
      * 创建时间
      */
     private Date createTime;
@@ -81,6 +89,22 @@ public class UserFollowListRsp {
         this.leaveDate = leaveDate;
     }
 
+    public String getUserPicture() {
+        return userPicture;
+    }
+
+    public void setUserPicture(String userPicture) {
+        this.userPicture = userPicture;
+    }
+
+    public String getBuilderUserType() {
+        return builderUserType;
+    }
+
+    public void setBuilderUserType(String builderUserType) {
+        this.builderUserType = builderUserType;
+    }
+
     public Date getCreateTime() {
         return createTime;
     }
@@ -98,6 +122,8 @@ public class UserFollowListRsp {
         sb.append(", builderStatus='").append(builderStatus).append('\'');
         sb.append(", admissionDate=").append(admissionDate);
         sb.append(", leaveDate=").append(leaveDate);
+        sb.append(", userPicture='").append(userPicture).append('\'');
+        sb.append(", builderUserType='").append(builderUserType).append('\'');
         sb.append(", createTime=").append(createTime);
         sb.append('}');
         return sb.toString();
