@@ -13,11 +13,11 @@ public class WorkWarningListReq {
      */
     private String mileageSegmentName;
     /**
-     * 昵称			db_column: NICK
+     * 昵称
      */
     private String nick;
     /**
-     * 手机			db_column: MOBILE
+     * 手机
      */
     private String mobile;
     /**
