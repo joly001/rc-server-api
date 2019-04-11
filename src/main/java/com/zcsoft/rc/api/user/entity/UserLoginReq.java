@@ -20,6 +20,11 @@ public class UserLoginReq {
      */
     @NotEmpty
     private String messagingToken;
+    /**
+     * 操作系统(ANDROID:Android、IOS:ios)
+     */
+    @NotEmpty
+    private String operatingSystem;
 
     public String getUsername() {
         return username;
@@ -45,12 +50,21 @@ public class UserLoginReq {
         this.messagingToken = messagingToken;
     }
 
+    public String getOperatingSystem() {
+        return operatingSystem;
+    }
+
+    public void setOperatingSystem(String operatingSystem) {
+        this.operatingSystem = operatingSystem;
+    }
+
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder("UserLoginReq{");
         sb.append("username='").append(username).append('\'');
         sb.append(", password='").append(password).append('\'');
         sb.append(", messagingToken='").append(messagingToken).append('\'');
+        sb.append(", operatingSystem='").append(operatingSystem).append('\'');
         sb.append('}');
         return sb.toString();
     }
