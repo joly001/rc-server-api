@@ -37,6 +37,10 @@ public class UserOrganizationRsp {
      */
     private String builderUserType;
     /**
+     * 组织id
+     */
+    private String organizationId;
+    /**
      * 是否关注
      */
     private Boolean isFollow;
@@ -105,6 +109,14 @@ public class UserOrganizationRsp {
         this.builderUserType = builderUserType;
     }
 
+    public String getOrganizationId() {
+        return organizationId;
+    }
+
+    public void setOrganizationId(String organizationId) {
+        this.organizationId = organizationId;
+    }
+
     public Boolean getFollow() {
         return isFollow;
     }
@@ -124,6 +136,7 @@ public class UserOrganizationRsp {
         sb.append(", leaveDate=").append(leaveDate);
         sb.append(", userPicture='").append(userPicture).append('\'');
         sb.append(", builderUserType='").append(builderUserType).append('\'');
+        sb.append(", organizationId='").append(organizationId).append('\'');
         sb.append(", isFollow=").append(isFollow);
         sb.append('}');
         return sb.toString();
