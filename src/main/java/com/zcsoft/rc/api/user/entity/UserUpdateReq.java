@@ -1,6 +1,9 @@
 package com.zcsoft.rc.api.user.entity;
 
+import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.NotEmpty;
+
+import javax.validation.constraints.Max;
 
 public class UserUpdateReq {
 
@@ -12,6 +15,7 @@ public class UserUpdateReq {
     /**
      * 姓名
      */
+    @Length(max = 10)
     private String nick;
     /**
      * 手机
