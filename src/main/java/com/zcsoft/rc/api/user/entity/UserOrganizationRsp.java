@@ -29,6 +29,10 @@ public class UserOrganizationRsp {
      */
     private Date leaveDate;
     /**
+     * 手环编码
+     */
+    private String wristStrapCode;
+    /**
      * 用户图片
      */
     private String userPicture;
@@ -93,6 +97,14 @@ public class UserOrganizationRsp {
         this.leaveDate = leaveDate;
     }
 
+    public String getWristStrapCode() {
+        return wristStrapCode;
+    }
+
+    public void setWristStrapCode(String wristStrapCode) {
+        this.wristStrapCode = wristStrapCode;
+    }
+
     public String getUserPicture() {
         return userPicture;
     }
@@ -134,6 +146,7 @@ public class UserOrganizationRsp {
         sb.append(", builderStatus='").append(builderStatus).append('\'');
         sb.append(", admissionDate=").append(admissionDate);
         sb.append(", leaveDate=").append(leaveDate);
+        sb.append(", wristStrapCode='").append(wristStrapCode).append('\'');
         sb.append(", userPicture='").append(userPicture).append('\'');
         sb.append(", builderUserType='").append(builderUserType).append('\'');
         sb.append(", organizationId='").append(organizationId).append('\'');
