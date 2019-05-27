@@ -1,5 +1,7 @@
 package com.zcsoft.rc.api.warning.entity;
 
+import java.util.Date;
+
 public class TrainWarningListRsp {
 
     /**
@@ -22,6 +24,10 @@ public class TrainWarningListRsp {
      * 告警内容
      */
     private String warningContent;
+    /**
+     * 创建时间
+     */
+    private Date createTime;
 
     public String getId() {
         return id;
@@ -63,6 +69,14 @@ public class TrainWarningListRsp {
         this.warningContent = warningContent;
     }
 
+    public Date getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(Date createTime) {
+        this.createTime = createTime;
+    }
+
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder("TrainWarningListRsp{");
@@ -71,6 +85,7 @@ public class TrainWarningListRsp {
         sb.append(", type='").append(type).append('\'');
         sb.append(", direction='").append(direction).append('\'');
         sb.append(", warningContent='").append(warningContent).append('\'');
+        sb.append(", createTime=").append(createTime);
         sb.append('}');
         return sb.toString();
     }
