@@ -9,9 +9,9 @@ public class WorkWarningListRsp {
      */
     private String id;
     /**
-     * 里程区间名称
+     * 作业面名称
      */
-    private String mileageSegmentName;
+    private String workSegmentName;
     /**
      * 昵称
      */
@@ -37,12 +37,12 @@ public class WorkWarningListRsp {
         this.id = id;
     }
 
-    public String getMileageSegmentName() {
-        return mileageSegmentName;
+    public String getWorkSegmentName() {
+        return workSegmentName;
     }
 
-    public void setMileageSegmentName(String mileageSegmentName) {
-        this.mileageSegmentName = mileageSegmentName;
+    public void setWorkSegmentName(String workSegmentName) {
+        this.workSegmentName = workSegmentName;
     }
 
     public String getNick() {
@@ -79,9 +79,9 @@ public class WorkWarningListRsp {
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("WorkWarningListReq{");
+        final StringBuilder sb = new StringBuilder("WorkWarningListRsp{");
         sb.append("id='").append(id).append('\'');
-        sb.append(", mileageSegmentName='").append(mileageSegmentName).append('\'');
+        sb.append(", workSegmentName='").append(workSegmentName).append('\'');
         sb.append(", nick='").append(nick).append('\'');
         sb.append(", mobile='").append(mobile).append('\'');
         sb.append(", type='").append(type).append('\'');
